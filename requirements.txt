@@ -8,3 +8,4 @@ pydantic
 loguru
 pytest
 markupsafe==2.0.1
+flask_ngrok
