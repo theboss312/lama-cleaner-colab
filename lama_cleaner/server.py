@@ -8,6 +8,7 @@ import time
 import imghdr
 from pathlib import Path
 from typing import Union
+from flask_ngrok import run_with_ngrok
 
 import cv2
 import torch
@@ -190,4 +191,5 @@ def main(args):
         )
         ui.run()
     else:
-        app.run(host=args.host, port=args.port, debug=args.debug)
+        app.run()
+run_with_ngrok(app)
